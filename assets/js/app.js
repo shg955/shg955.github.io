@@ -148,7 +148,7 @@
     const start = getTypeStartConfig();
     const notes = [
       "예식일: " + getDateText(),
-      "행사 시간: " + start.label + " ~ " + (config.wedding.endTimeLabel || "오후 2시 30분")
+      "시간: " + start.label
     ];
 
     (config.wedding.notes || []).forEach(function (note) {
