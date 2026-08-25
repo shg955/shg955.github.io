@@ -373,7 +373,21 @@ body {
   visibility: hidden;
 }
 
-.day.target {
+/* 주말 색: 토요일 파랑, 일요일 빨강 (요일 머리글 + 날짜 공통) */
+.weekday.is-sat,
+.day.is-sat {
+  color: #3f6fd8;
+}
+
+.weekday.is-sun,
+.day.is-sun {
+  color: #d0534f;
+}
+
+/* 예식일 강조는 주말 색보다 우선한다 */
+.day.target,
+.day.target.is-sat,
+.day.target.is-sun {
   border-color: #e8c7cf;
   background: #f4dde2;
   font-weight: 700;

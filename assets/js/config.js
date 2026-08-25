@@ -18,13 +18,13 @@
     entryEndShort: "14:30",
     endTimeLabel: "오후 2시 30분",
     startByType: {
-      "1": { hour24: 12, label: "오후 12시 00분", short: "12:00" },
-      "2": { hour24: 13, label: "오후 1시 00분", short: "13:00" }
+      "1": { hour24: 12, label: "오후 12시 30분", short: "12:30" },
+      "2": { hour24: 13, label: "오후 1시 30분", short: "13:30" }
     },
-    dateLabel: "2026년 10월 17일 토요일 오후 12시 00분 (입장 12:00 ~ 14:30)",
-    venueName: "채빛퀴진",
+    dateLabel: "2026년 10월 17일 토요일 오후 12시 30분 (입장 12:30 ~ 14:30)",
+    venueName: "서울 새빛섬 채빛퀴진",
     address: "서울 서초구 올림픽대로 2085-14",
-    heroMeta: "2026년 10월 17일 토요일 오후 12시 00분 · 채빛퀴진",
+    heroMeta: "2026년 10월 17일 토요일 오후 12시 30분 · 채빛퀴진",
     transportGuide: "입장 가능 시간: {{ENTRY_WINDOW}} (입장 시작 {{START_SHORT}})",
     transportDetails: [
       {
@@ -83,10 +83,10 @@
     { role: "신랑", name: "신홍기", phone: "010-5628-5244" },
     { role: "신부", name: "한효경", phone: "010-2394-3150" }
   ],
-  accounts: [
+  accounts: [ 
     { side: "신랑측", holder: "신홍기", bank: "국민은행", number: "163202-04-167659" },
-    { side: "신랑측 아버지", holder: "신현호", bank: "국민은행", number: "163202-04-167659" },
-    { side: "신랑측 어머니", holder: "남희엽", bank: "국민은행", number: "163202-04-167659" },
+    { side: "신랑측 아버지", holder: "신현호", bank: "하나은행", number: "2398-905933-1007" },
+    { side: "신랑측 어머니", holder: "남희엽", bank: "국민은행", number: "228001-04-038163" },
     { side: "신부측", holder: "한효경", bank: "하나은행", number: "244-910027-09305" },
     { side: "신부측 아버지", holder: "한상훈", bank: "하나은행", number: "244-910027-09305" },
     { side: "신부측 어머니", holder: "이수희", bank: "하나은행", number: "244-910027-09305" }

@@ -375,20 +375,32 @@
     const month = targetDate.getMonth();
     const targetDay = targetDate.getDate();
 
-    const firstDay = new Date(year, month, 1).getDay();
+    // getDay()는 일요일이 0. 월요일 시작으로 쓰려면 한 칸씩 당긴다.
+    const firstDay = (new Date(year, month, 1).getDay() + 6) % 7;
     const lastDate = new Date(year, month + 1, 0).getDate();
 
-    const weekDays = ["일", "월", "화", "수", "목", "금", "토"];
+    const weekDays = ["월", "화", "수", "목", "금", "토", "일"];
     const calendarEl = $("#calendar");
 
     if (!calendarEl) {
       return;
     }
 
+    // 월요일 시작 기준 인덱스(0~6)에서 토/일을 가려낸다
+    function weekendClass(mondayIndex) {
+      if (mondayIndex === 5) {
+        return " is-sat";
+      }
+      if (mondayIndex === 6) {
+        return " is-sun";
+      }
+      return "";
+    }
+
     const cells = [];
 
-    weekDays.forEach(function (w) {
-      cells.push('<div class="weekday">' + w + "</div>");
+    weekDays.forEach(function (w, i) {
+      cells.push('<div class="weekday' + weekendClass(i) + '">' + w + "</div>");
     });
 
     for (let i = 0; i < firstDay; i += 1) {
@@ -397,7 +409,9 @@
 
     for (let d = 1; d <= lastDate; d += 1) {
       const cls = d === targetDay ? "day target" : "day";
-      cells.push('<div class="' + cls + '">' + d + "</div>");
+      cells.push(
+        '<div class="' + cls + weekendClass((firstDay + d - 1) % 7) + '">' + d + "</div>"
+      );
     }
 
     calendarEl.innerHTML =
