@@ -1,0 +1,270 @@
+[
+  {
+    "id": "g10",
+    "source": "gallery- (10).jpg",
+    "orientation": "portrait",
+    "thumb": "assets/images/gallery/g10-thumb.webp",
+    "hero": "assets/images/gallery/g10-hero.webp",
+    "src": "assets/images/gallery/g10.webp",
+    "width": 1467,
+    "height": 2200,
+    "bytes": 696304
+  },
+  {
+    "id": "g12",
+    "source": "gallery- (12).jpg",
+    "orientation": "portrait",
+    "thumb": "assets/images/gallery/g12-thumb.webp",
+    "hero": "assets/images/gallery/g12-hero.webp",
+    "src": "assets/images/gallery/g12.webp",
+    "width": 1467,
+    "height": 2200,
+    "bytes": 730508
+  },
+  {
+    "id": "g13",
+    "source": "gallery- (13).jpg",
+    "orientation": "portrait",
+    "thumb": "assets/images/gallery/g13-thumb.webp",
+    "hero": "assets/images/gallery/g13-hero.webp",
+    "src": "assets/images/gallery/g13.webp",
+    "width": 1467,
+    "height": 2200,
+    "bytes": 468946
+  },
+  {
+    "id": "g14",
+    "source": "gallery- (14).jpg",
+    "orientation": "portrait",
+    "thumb": "assets/images/gallery/g14-thumb.webp",
+    "hero": "assets/images/gallery/g14-hero.webp",
+    "src": "assets/images/gallery/g14.webp",
+    "width": 1467,
+    "height": 2200,
+    "bytes": 729396
+  },
+  {
+    "id": "g15",
+    "source": "gallery- (15).jpg",
+    "orientation": "portrait",
+    "thumb": "assets/images/gallery/g15-thumb.webp",
+    "hero": "assets/images/gallery/g15-hero.webp",
+    "src": "assets/images/gallery/g15.webp",
+    "width": 1466,
+    "height": 2200,
+    "bytes": 611196
+  },
+  {
+    "id": "g16",
+    "source": "gallery- (16).jpg",
+    "orientation": "portrait",
+    "thumb": "assets/images/gallery/g16-thumb.webp",
+    "hero": "assets/images/gallery/g16-hero.webp",
+    "src": "assets/images/gallery/g16.webp",
+    "width": 1467,
+    "height": 2200,
+    "bytes": 620710
+  },
+  {
+    "id": "g17",
+    "source": "gallery- (17).jpg",
+    "orientation": "portrait",
+    "thumb": "assets/images/gallery/g17-thumb.webp",
+    "hero": "assets/images/gallery/g17-hero.webp",
+    "src": "assets/images/gallery/g17.webp",
+    "width": 1467,
+    "height": 2200,
+    "bytes": 346616
+  },
+  {
+    "id": "g18",
+    "source": "gallery- (18).jpg",
+    "orientation": "portrait",
+    "thumb": "assets/images/gallery/g18-thumb.webp",
+    "hero": "assets/images/gallery/g18-hero.webp",
+    "src": "assets/images/gallery/g18.webp",
+    "width": 1467,
+    "height": 2200,
+    "bytes": 236484
+  },
+  {
+    "id": "g19",
+    "source": "gallery- (19).jpg",
+    "orientation": "portrait",
+    "thumb": "assets/images/gallery/g19-thumb.webp",
+    "hero": "assets/images/gallery/g19-hero.webp",
+    "src": "assets/images/gallery/g19.webp",
+    "width": 1467,
+    "height": 2200,
+    "bytes": 300770
+  },
+  {
+    "id": "g20",
+    "source": "gallery- (20).jpg",
+    "orientation": "portrait",
+    "thumb": "assets/images/gallery/g20-thumb.webp",
+    "hero": "assets/images/gallery/g20-hero.webp",
+    "src": "assets/images/gallery/g20.webp",
+    "width": 1467,
+    "height": 2200,
+    "bytes": 438040
+  },
+  {
+    "id": "g21",
+    "source": "gallery- (21).jpg",
+    "orientation": "portrait",
+    "thumb": "assets/images/gallery/g21-thumb.webp",
+    "hero": "assets/images/gallery/g21-hero.webp",
+    "src": "assets/images/gallery/g21.webp",
+    "width": 1467,
+    "height": 2200,
+    "bytes": 296438
+  },
+  {
+    "id": "g22",
+    "source": "gallery- (22).jpg",
+    "orientation": "portrait",
+    "thumb": "assets/images/gallery/g22-thumb.webp",
+    "hero": "assets/images/gallery/g22-hero.webp",
+    "src": "assets/images/gallery/g22.webp",
+    "width": 1467,
+    "height": 2200,
+    "bytes": 1501332
+  },
+  {
+    "id": "g23",
+    "source": "gallery- (23).jpg",
+    "orientation": "landscape",
+    "thumb": "assets/images/gallery/g23-thumb.webp",
+    "hero": "assets/images/gallery/g23-hero.webp",
+    "src": "assets/images/gallery/g23.webp",
+    "width": 2200,
+    "height": 1467,
+    "bytes": 1027990
+  },
+  {
+    "id": "g24",
+    "source": "gallery- (24).jpg",
+    "orientation": "portrait",
+    "thumb": "assets/images/gallery/g24-thumb.webp",
+    "hero": "assets/images/gallery/g24-hero.webp",
+    "src": "assets/images/gallery/g24.webp",
+    "width": 1467,
+    "height": 2200,
+    "bytes": 511360
+  },
+  {
+    "id": "g25",
+    "source": "gallery- (25).jpg",
+    "orientation": "portrait",
+    "thumb": "assets/images/gallery/g25-thumb.webp",
+    "hero": "assets/images/gallery/g25-hero.webp",
+    "src": "assets/images/gallery/g25.webp",
+    "width": 1467,
+    "height": 2200,
+    "bytes": 514574
+  },
+  {
+    "id": "g26",
+    "source": "gallery- (26).jpg",
+    "orientation": "portrait",
+    "thumb": "assets/images/gallery/g26-thumb.webp",
+    "hero": "assets/images/gallery/g26-hero.webp",
+    "src": "assets/images/gallery/g26.webp",
+    "width": 1467,
+    "height": 2200,
+    "bytes": 121334
+  },
+  {
+    "id": "g03",
+    "source": "gallery- (3).jpg",
+    "orientation": "portrait",
+    "thumb": "assets/images/gallery/g03-thumb.webp",
+    "hero": "assets/images/gallery/g03-hero.webp",
+    "src": "assets/images/gallery/g03.webp",
+    "width": 1467,
+    "height": 2200,
+    "bytes": 950528
+  },
+  {
+    "id": "g11",
+    "source": "gallery- (11).jpg",
+    "orientation": "portrait",
+    "thumb": "assets/images/gallery/g11-thumb.webp",
+    "hero": "assets/images/gallery/g11-hero.webp",
+    "src": "assets/images/gallery/g11.webp",
+    "width": 1467,
+    "height": 2200,
+    "bytes": 158970
+  },
+  {
+    "id": "g01",
+    "source": "gallery- (1).jpg",
+    "orientation": "portrait",
+    "thumb": "assets/images/gallery/g01-thumb.webp",
+    "hero": "assets/images/gallery/g01-hero.webp",
+    "src": "assets/images/gallery/g01.webp",
+    "width": 1467,
+    "height": 2200,
+    "bytes": 515010
+  },
+  {
+    "id": "g02",
+    "source": "gallery- (2).jpg",
+    "orientation": "portrait",
+    "thumb": "assets/images/gallery/g02-thumb.webp",
+    "hero": "assets/images/gallery/g02-hero.webp",
+    "src": "assets/images/gallery/g02.webp",
+    "width": 1467,
+    "height": 2200,
+    "bytes": 515748
+  },
+  {
+    "id": "g04",
+    "source": "gallery- (4).jpg",
+    "orientation": "portrait",
+    "thumb": "assets/images/gallery/g04-thumb.webp",
+    "hero": "assets/images/gallery/g04-hero.webp",
+    "src": "assets/images/gallery/g04.webp",
+    "width": 1467,
+    "height": 2200,
+    "bytes": 1329904
+  },
+  {
+    "id": "g05-07",
+    "source": [
+      "gallery- (5).jpg",
+      "gallery- (6).jpg",
+      "gallery- (7).jpg"
+    ],
+    "orientation": "tall",
+    "thumb": "assets/images/gallery/g05-07-thumb.webp",
+    "hero": "assets/images/gallery/g05-07-hero.webp",
+    "src": "assets/images/gallery/g05-07.webp",
+    "width": 1500,
+    "height": 3000,
+    "bytes": 2793488
+  },
+  {
+    "id": "g08",
+    "source": "gallery- (8).jpg",
+    "orientation": "portrait",
+    "thumb": "assets/images/gallery/g08-thumb.webp",
+    "hero": "assets/images/gallery/g08-hero.webp",
+    "src": "assets/images/gallery/g08.webp",
+    "width": 1467,
+    "height": 2200,
+    "bytes": 1357078
+  },
+  {
+    "id": "g09",
+    "source": "gallery- (9).jpg",
+    "orientation": "landscape",
+    "thumb": "assets/images/gallery/g09-thumb.webp",
+    "hero": "assets/images/gallery/g09-hero.webp",
+    "src": "assets/images/gallery/g09.webp",
+    "width": 2200,
+    "height": 1467,
+    "bytes": 603438
+  }
+]

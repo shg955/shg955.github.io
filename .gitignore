@@ -1,0 +1,33 @@
+.DS_Store
+Thumbs.db
+
+# --- 이미지 원본 (로컬 보관, 저장소/배포 제외) ---
+# 총 436MB. tools/optimize_images.py 로 assets/images/gallery/*.webp 생성 후 사용.
+# 인쇄(PSD 300dpi) 작업 시 필요하므로 로컬에서는 삭제하지 말 것.
+assets/images/gallery- (*).jpg
+
+# 약도 원본 (인쇄용). 웹은 map-sebit-minimal-bw.webp 사용.
+assets/images/map-sebit-minimal-bw.png
+assets/images/map-sebit-minimal-bw_backup.png
+
+# Python
+__pycache__/
+*.pyc
+
+# 작업 확인용 산출물 (배포 불필요)
+contact_sheet.png
+quality_compare.png
+quality_after.png
+
+# --- 사이트 구동에 불필요한 작업 파일 (로컬 보관, 배포 제외) ---
+# 종이 청첩장 시안 세트
+paper_invitation_*.html
+assets/js/paper_preview_common.js
+시안08_Photopea_PSD_제작가이드.md
+
+# 사진 번호 확인용 페이지
+gallery_index.html
+
+# 내부 기획/스펙 문서
+모바일청첩장_기획서.md
+모바일청첩장_스펙문서.md

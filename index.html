@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="모바일 청첩장">
+  <!-- 개인정보(연락처/계좌)가 포함되므로 검색엔진 색인을 막는다 -->
+  <meta name="robots" content="noindex, nofollow">
+  <title>모바일 청첩장</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20260825-10">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+
+  <main class="page">
+    <section class="hero section reveal" id="hero">
+      <!-- 사진은 잘리지 않게(contain) 넣고, 남는 여백은 같은 사진을 흐리게 깐다.
+           src는 HTML 파서가 미리 받도록 첫 장을 직접 지정한다.
+           hero.images 첫 항목을 바꾸면 이 경로도 함께 바꿀 것. -->
+      <div class="hero-media" aria-hidden="true">
+        <div id="heroLayerA" class="hero-layer is-active">
+          <img class="hero-blur" src="assets/images/gallery/g10-hero.webp" alt="">
+          <img class="hero-photo" src="assets/images/gallery/g10-hero.webp" alt="">
+        </div>
+        <div id="heroLayerB" class="hero-layer">
+          <img class="hero-blur" alt="">
+          <img class="hero-photo" alt="">
+        </div>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Wedding Invitation</p>
+        <h1 class="names"><span id="groomName">신홍기</span> &amp; <span id="brideName">한효경</span></h1>
+        <p class="wedding-meta" id="heroMeta">2026년 10월 17일 토요일 오전 12시 00분 · 채빛퀴진</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#message">청첩장 보기</a>
+          <a class="btn btn-ghost" href="#location">오시는 길</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="message">
+      <h2>초대합니다</h2>
+      <p id="guestGreeting" class="guest-greeting">소중한 분을 초대합니다.</p>
+      <p id="invitationMessage" class="message-body"></p>
+      <div id="familyLines" class="family-lines"></div>
+    </section>
+
+    <section class="section reveal" id="schedule">
+      <h2>예식 안내</h2>
+      <div class="card-grid two">
+        <article class="card">
+          <h3>일시</h3>
+          <p id="weddingDateText"></p>
+          <p id="countdown" class="countdown"></p>
+        </article>
+        <article class="card">
+          <h3>안내</h3>
+          <ul id="scheduleNotes" class="note-list"></ul>
+        </article>
+      </div>
+      <div class="calendar-wrap card" id="calendar"></div>
+    </section>
+
+    <section class="section reveal" id="location">
+      <h2>오시는 길</h2>
+      <article class="card">
+        <h3 id="venueName">채빛퀴진</h3>
+        <p id="venueAddress"></p>
+        <p id="transportGuide"></p>
+        <div id="transportDetails" class="transport-details"></div>
+        <div id="kakaoMap" class="map-embed" aria-label="행사장 지도"></div>
+        <div class="button-row">
+          <a id="mapPrimary" class="btn btn-primary" target="_blank" rel="noreferrer">네이버지도</a>
+          <a id="mapSecondary" class="btn btn-ghost" target="_blank" rel="noreferrer">카카오지도</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="section reveal" id="gallery">
+      <h2>갤러리</h2>
+      <div id="galleryGrid" class="gallery-grid"></div>
+    </section>
+
+    <section class="section reveal" id="contacts">
+      <h2>연락처</h2>
+      <div id="contactList" class="card-grid"></div>
+    </section>
+
+    <section class="section reveal" id="gifts">
+      <h2>마음 전하실 곳</h2>
+      <div id="accountsList" class="account-list"></div>
+    </section>
+
+    <section class="section reveal" id="share">
+      <h2>공유하기</h2>
+      <div class="card">
+        <p class="share-text">아래 버튼으로 청첩장을 전달해 주세요.</p>
+        <div class="button-row">
+          <button id="copyLinkBtn" class="btn btn-primary" type="button">링크 복사</button>
+          <button id="kakaoShareBtn" class="btn btn-ghost" type="button">카카오톡 공유</button>
+          <a id="smsShareBtn" class="btn btn-ghost" href="#">문자 공유</a>
+        </div>
+        <p id="shareFeedback" class="feedback" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p id="footerText"></p>
+  </footer>
+
+  <dialog id="galleryDialog" class="gallery-dialog">
+    <button id="dialogClose" class="dialog-close" type="button" aria-label="닫기">×</button>
+    <button id="dialogPrev" class="dialog-nav left" type="button" aria-label="이전">‹</button>
+    <img id="dialogImage" src="" alt="갤러리 이미지 확대">
+    <button id="dialogNext" class="dialog-nav right" type="button" aria-label="다음">›</button>
+    <p id="dialogCaption" class="dialog-caption"></p>
+  </dialog>
+
+  <script src="assets/js/config.js?v=20260825-10"></script>
+  <script src="assets/js/app.js?v=20260825-10"></script>
+</body>
+</html>
