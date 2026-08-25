@@ -83,13 +83,23 @@
     { role: "신랑", name: "신홍기", phone: "010-5628-5244" },
     { role: "신부", name: "한효경", phone: "010-2394-3150" }
   ],
-  accounts: [ 
-    { side: "신랑측", holder: "신홍기", bank: "국민은행", number: "163202-04-167659" },
-    { side: "신랑측 아버지", holder: "신현호", bank: "하나은행", number: "2398-905933-1007" },
-    { side: "신랑측 어머니", holder: "남희엽", bank: "국민은행", number: "228001-04-038163" },
-    { side: "신부측", holder: "한효경", bank: "하나은행", number: "244-910027-09305" },
-    { side: "신부측 아버지", holder: "한상훈", bank: "하나은행", number: "244-910027-09305" },
-    { side: "신부측 어머니", holder: "이수희", bank: "하나은행", number: "244-910027-09305" }
+  accounts: [
+    {
+      side: "신랑측",
+      entries: [
+        { role: "신랑", holder: "신홍기", bank: "국민은행", number: "163202-04-167659" },
+        { role: "아버지", holder: "신현호", bank: "하나은행", number: "2398-905933-1007" },
+        { role: "어머니", holder: "남희엽", bank: "국민은행", number: "228001-04-038163" }
+      ]
+    },
+    {
+      side: "신부측",
+      entries: [
+        { role: "신부", holder: "한효경", bank: "하나은행", number: "244-910027-09305" },
+        { role: "아버지", holder: "한상훈", bank: "하나은행", number: "244-910027-09305" },
+        { role: "어머니", holder: "이수희", bank: "하나은행", number: "244-910027-09305" }
+      ]
+    }
   ],
   hero: {
     // 커버에서 순환할 사진. 비워두면 gallery 전체를 순서대로 사용.
@@ -128,7 +138,7 @@
     imageUrl: "assets/images/share-thumb.jpg",
     smsText: "모바일 청첩장을 전해드립니다. 참석하셔서 자리를 빛내 주세요.",
     kakaoTitle: "신홍기 · 한효경 결혼식에 초대합니다",
-    kakaoDescription: "2026년 10월 17일 토요일 오후 12시 00분 · 채빛퀴진"
+    kakaoDescription: "2026년 10월 17일 토요일 오후 12시 30분 · 서울 세빛섬 채빛퀴진"
   },
   footer: "신홍기 · 한효경 결혼식에 초대합니다."
 };

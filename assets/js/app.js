@@ -669,36 +669,63 @@
       return;
     }
 
-    config.accounts.forEach(function (account, index) {
+    (config.accounts || []).forEach(function (group, index) {
       const box = document.createElement("article");
       box.className = "account";
-      box.innerHTML =
-        '<div class="account-head">' +
-        "<strong>" +
-        account.side +
-        "</strong>" +
-        '<button class="inline-button" type="button" data-toggle="' +
-        index +
-        '">계좌 보기</button>' +
-        "</div>" +
-        '<div class="account-body" data-body="' +
-        index +
-        '">' +
-        "<p>예금주: " +
-        account.holder +
-        "</p>" +
-        "<p>" +
-        account.bank +
-        " " +
-        account.number +
-        "</p>" +
-        '<button class="inline-button" type="button" data-copy="' +
-        account.bank +
-        " " +
-        account.number +
-        '">계좌번호 복사</button>' +
-        "</div>";
 
+      const head = document.createElement("div");
+      head.className = "account-head";
+
+      const title = document.createElement("strong");
+      title.textContent = group.side;
+
+      const toggle = document.createElement("button");
+      toggle.type = "button";
+      toggle.className = "inline-button";
+      toggle.dataset.toggle = String(index);
+      toggle.textContent = "계좌 보기";
+
+      head.appendChild(title);
+      head.appendChild(toggle);
+
+      const body = document.createElement("div");
+      body.className = "account-body";
+
+      // entries가 없으면 예전의 한 항목짜리 형식으로 간주한다
+      const entries = group.entries || [group];
+
+      entries.forEach(function (item) {
+        const account = item.bank + " " + item.number;
+
+        const row = document.createElement("div");
+        row.className = "account-row";
+
+        const who = document.createElement("p");
+        who.className = "account-who";
+        who.textContent = [item.role, item.holder].filter(Boolean).join(" · ");
+
+        const line = document.createElement("div");
+        line.className = "account-line";
+
+        const num = document.createElement("p");
+        num.className = "account-number";
+        num.textContent = account;
+
+        const copy = document.createElement("button");
+        copy.type = "button";
+        copy.className = "inline-button";
+        copy.dataset.copy = account;
+        copy.textContent = "복사";
+
+        line.appendChild(num);
+        line.appendChild(copy);
+        row.appendChild(who);
+        row.appendChild(line);
+        body.appendChild(row);
+      });
+
+      box.appendChild(head);
+      box.appendChild(body);
       wrap.appendChild(box);
     });
 
@@ -711,7 +738,8 @@
       if (target.dataset.toggle) {
         const root = target.closest(".account");
         if (root) {
-          root.classList.toggle("open");
+          const opened = root.classList.toggle("open");
+          target.textContent = opened ? "접기" : "계좌 보기";
         }
       }
 

@@ -467,6 +467,36 @@ body {
   display: block;
 }
 
+/* 한 그룹(신랑측/신부측) 안의 개별 계좌 */
+.account-row {
+  padding: 10px 0;
+  border-top: 1px dashed var(--line);
+}
+
+.account-row:first-child {
+  padding-top: 2px;
+  border-top: 0;
+}
+
+.account-who {
+  margin: 0 0 3px;
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.account-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.account-number {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
 .inline-button {
   border: 1px solid var(--line);
   background: #fff;

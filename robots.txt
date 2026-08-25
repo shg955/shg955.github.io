@@ -1,2 +1,10 @@
+# 링크 미리보기 카드를 만드는 스크래퍼는 허용
+User-agent: kakaotalk-scrap
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+# 검색엔진 색인은 차단 (연락처/계좌 포함)
 User-agent: *
 Disallow: /
