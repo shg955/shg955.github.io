@@ -22,17 +22,16 @@
       "2": { hour24: 13, label: "오후 1시 30분", short: "13:30" }
     },
     dateLabel: "2026년 10월 17일 토요일 오후 12시 30분 (입장 12:30 ~ 14:30)",
-    venueName: "서울 새빛섬 채빛퀴진",
+    venueName: "서울 세빛섬 채빛퀴진",
     address: "서울 서초구 올림픽대로 2085-14",
     heroMeta: "2026년 10월 17일 토요일 오후 12시 30분 · 채빛퀴진",
-    transportGuide: "입장 가능 시간: {{ENTRY_WINDOW}} (입장 시작 {{START_SHORT}})",
+    transportGuide: "",//"입장 가능 시간: {{ENTRY_WINDOW}} (입장 시작 {{START_SHORT}})",
     transportDetails: [
       {
         icon: "📍",
         title: "지하철 및 셔틀버스",
         lines: [
-          "3, 7, 9호선 고속터미널역 8-1번 출구, 약 650m (도보 약 15분)",
-          "세빛섬 셔틀버스는 2020년 12월 1일부터 운행 종료되었습니다."
+          "3, 7, 9호선 고속터미널역 8-1번 출구, 약 650m (도보 약 15분)"
         ]
       },
       {

@@ -447,7 +447,13 @@
   function renderLocation() {
     setText("#venueName", config.wedding.venueName);
     setText("#venueAddress", config.wedding.address);
-    setText("#transportGuide", resolveDynamicText(config.wedding.transportGuide));
+    // 문구를 비워두면 빈 문단이 여백만 차지하므로 아예 숨긴다
+    const guideText = resolveDynamicText(config.wedding.transportGuide);
+    const guideEl = $("#transportGuide");
+    if (guideEl) {
+      guideEl.textContent = guideText;
+      guideEl.style.display = guideText ? "" : "none";
+    }
 
     const primary = $("#mapPrimary");
     const secondary = $("#mapSecondary");
