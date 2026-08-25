@@ -113,17 +113,15 @@
     { src: "assets/images/gallery/g21.webp", thumb: "assets/images/gallery/g21-thumb.webp", hero: "assets/images/gallery/g21-hero.webp", alt: "웨딩 사진 11" },
     { src: "assets/images/gallery/g22.webp", thumb: "assets/images/gallery/g22-thumb.webp", hero: "assets/images/gallery/g22-hero.webp", alt: "웨딩 사진 12" },
     { src: "assets/images/gallery/g23.webp", thumb: "assets/images/gallery/g23-thumb.webp", hero: "assets/images/gallery/g23-hero.webp", alt: "웨딩 사진 13", layout: "wide" },
-    { src: "assets/images/gallery/g24.webp", thumb: "assets/images/gallery/g24-thumb.webp", hero: "assets/images/gallery/g24-hero.webp", alt: "웨딩 사진 14" },
-    { src: "assets/images/gallery/g25.webp", thumb: "assets/images/gallery/g25-thumb.webp", hero: "assets/images/gallery/g25-hero.webp", alt: "웨딩 사진 15" },
-    { src: "assets/images/gallery/g26.webp", thumb: "assets/images/gallery/g26-thumb.webp", hero: "assets/images/gallery/g26-hero.webp", alt: "웨딩 사진 16" },
-    { src: "assets/images/gallery/g03.webp", thumb: "assets/images/gallery/g03-thumb.webp", hero: "assets/images/gallery/g03-hero.webp", alt: "웨딩 사진 17" },
-    { src: "assets/images/gallery/g11.webp", thumb: "assets/images/gallery/g11-thumb.webp", hero: "assets/images/gallery/g11-hero.webp", alt: "웨딩 사진 18" },
-    { src: "assets/images/gallery/g01.webp", thumb: "assets/images/gallery/g01-thumb.webp", hero: "assets/images/gallery/g01-hero.webp", alt: "웨딩 사진 19" },
-    { src: "assets/images/gallery/g02.webp", thumb: "assets/images/gallery/g02-thumb.webp", hero: "assets/images/gallery/g02-hero.webp", alt: "웨딩 사진 20" },
-    { src: "assets/images/gallery/g04.webp", thumb: "assets/images/gallery/g04-thumb.webp", hero: "assets/images/gallery/g04-hero.webp", alt: "웨딩 사진 21" },
-    { src: "assets/images/gallery/g05-07.webp", thumb: "assets/images/gallery/g05-07-thumb.webp", hero: "assets/images/gallery/g05-07-hero.webp", alt: "웨딩 사진 22", layout: "tall" },
-    { src: "assets/images/gallery/g08.webp", thumb: "assets/images/gallery/g08-thumb.webp", hero: "assets/images/gallery/g08-hero.webp", alt: "웨딩 사진 23" },
-    { src: "assets/images/gallery/g09.webp", thumb: "assets/images/gallery/g09-thumb.webp", hero: "assets/images/gallery/g09-hero.webp", alt: "웨딩 사진 24", layout: "wide" }
+    { src: "assets/images/gallery/g26.webp", thumb: "assets/images/gallery/g26-thumb.webp", hero: "assets/images/gallery/g26-hero.webp", alt: "웨딩 사진 14" },
+    { src: "assets/images/gallery/g03.webp", thumb: "assets/images/gallery/g03-thumb.webp", hero: "assets/images/gallery/g03-hero.webp", alt: "웨딩 사진 15" },
+    { src: "assets/images/gallery/g11.webp", thumb: "assets/images/gallery/g11-thumb.webp", hero: "assets/images/gallery/g11-hero.webp", alt: "웨딩 사진 16" },
+    { src: "assets/images/gallery/g01.webp", thumb: "assets/images/gallery/g01-thumb.webp", hero: "assets/images/gallery/g01-hero.webp", alt: "웨딩 사진 17" },
+    { src: "assets/images/gallery/g02.webp", thumb: "assets/images/gallery/g02-thumb.webp", hero: "assets/images/gallery/g02-hero.webp", alt: "웨딩 사진 18" },
+    { src: "assets/images/gallery/g04.webp", thumb: "assets/images/gallery/g04-thumb.webp", hero: "assets/images/gallery/g04-hero.webp", alt: "웨딩 사진 19" },
+    { src: "assets/images/gallery/g05-07.webp", thumb: "assets/images/gallery/g05-07-thumb.webp", hero: "assets/images/gallery/g05-07-hero.webp", alt: "웨딩 사진 20", layout: "tall" },
+    { src: "assets/images/gallery/g08.webp", thumb: "assets/images/gallery/g08-thumb.webp", hero: "assets/images/gallery/g08-hero.webp", alt: "웨딩 사진 21" },
+    { src: "assets/images/gallery/g09.webp", thumb: "assets/images/gallery/g09-thumb.webp", hero: "assets/images/gallery/g09-hero.webp", alt: "웨딩 사진 22", layout: "wide" }
   ],
   share: {
     // 카카오 공유 썸네일. 규격: 400x400~800x800, 비율 2:1~3:4, 500KB 이하, SVG 불가

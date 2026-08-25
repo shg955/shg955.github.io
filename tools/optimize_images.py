@@ -16,6 +16,7 @@ gallery/manifest.json 에 config.js 로 옮길 목록을 함께 출력하며,
     python tools/optimize_images.py
 """
 
+import argparse
 import json
 import re
 import sys
@@ -80,11 +81,35 @@ def mb(num_bytes: int) -> float:
     return num_bytes / (1024 * 1024)
 
 
+def source_number(path: Path) -> int:
+    """'gallery- (21).jpg' -> 21. 파일명이 곧 id이므로 일부만 재변환해도 어긋나지 않는다."""
+    m = re.search(r"\((\d+)\)", path.name)
+    return int(m.group(1)) if m else 0
+
+
 def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument(
+        "--only",
+        help="일부만 재변환할 원본 번호 (예: --only 21  또는  --only 21,24)",
+    )
+    args = ap.parse_args()
+
     sources = sorted(SRC_DIR.glob("gallery- (*).jpg"), key=natural_key)
     if not sources:
         print(f"[!] 원본을 찾지 못했습니다: {SRC_DIR}")
         return 1
+
+    manifest_path = OUT_DIR / "manifest.json"
+    only = None
+    if args.only:
+        only = {int(v) for v in args.only.replace(" ", "").split(",") if v}
+        sources = [s for s in sources if source_number(s) in only]
+        missing = only - {source_number(s) for s in sources}
+        if missing:
+            print(f"[!] 원본을 찾지 못했습니다: {sorted(missing)}")
+            return 1
+        print(f"부분 재변환: {', '.join(s.name for s in sources)}\n")
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -92,8 +117,8 @@ def main() -> int:
     out_total = 0
     manifest = []
 
-    for idx, src in enumerate(sources, start=1):
-        stem = f"g{idx:02d}"
+    for src in sources:
+        stem = f"g{source_number(src):02d}"
         img = load_clean(src)
         landscape = img.size[0] > img.size[1]
 
@@ -138,13 +163,19 @@ def main() -> int:
             f"{'  [가로]' if landscape else ''}"
         )
 
-    manifest_path = OUT_DIR / "manifest.json"
-
-    # 기존 노출 순서를 유지하고, 새로 생긴 사진만 뒤에 붙인다
-    order = saved_order(manifest_path)
-    if order:
-        rank = {gid: i for i, gid in enumerate(order)}
-        manifest.sort(key=lambda entry: rank.get(entry["id"], len(rank)))
+    if only and manifest_path.exists():
+        # 부분 재변환: 기존 목록에서 해당 항목만 갈아끼우고 나머지는 그대로 둔다
+        existing = json.loads(manifest_path.read_text(encoding="utf-8"))
+        updated = {e["id"]: e for e in manifest}
+        merged = [updated.pop(e["id"], e) for e in existing]
+        merged.extend(updated.values())     # 목록에 없던 사진은 뒤에 추가
+        manifest = merged
+    else:
+        # 기존 노출 순서를 유지하고, 새로 생긴 사진만 뒤에 붙인다
+        order = saved_order(manifest_path)
+        if order:
+            rank = {gid: i for i, gid in enumerate(order)}
+            manifest.sort(key=lambda entry: rank.get(entry["id"], len(rank)))
 
     manifest_path.write_text(
         json.dumps(manifest, indent=2, ensure_ascii=False), encoding="utf-8"

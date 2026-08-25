@@ -118,7 +118,7 @@
     "src": "assets/images/gallery/g21.webp",
     "width": 1467,
     "height": 2200,
-    "bytes": 296438
+    "bytes": 295384
   },
   {
     "id": "g22",
@@ -141,28 +141,6 @@
     "width": 2200,
     "height": 1467,
     "bytes": 1027990
-  },
-  {
-    "id": "g24",
-    "source": "gallery- (24).jpg",
-    "orientation": "portrait",
-    "thumb": "assets/images/gallery/g24-thumb.webp",
-    "hero": "assets/images/gallery/g24-hero.webp",
-    "src": "assets/images/gallery/g24.webp",
-    "width": 1467,
-    "height": 2200,
-    "bytes": 511360
-  },
-  {
-    "id": "g25",
-    "source": "gallery- (25).jpg",
-    "orientation": "portrait",
-    "thumb": "assets/images/gallery/g25-thumb.webp",
-    "hero": "assets/images/gallery/g25-hero.webp",
-    "src": "assets/images/gallery/g25.webp",
-    "width": 1467,
-    "height": 2200,
-    "bytes": 514574
   },
   {
     "id": "g26",
