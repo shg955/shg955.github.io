@@ -67,7 +67,7 @@ body {
 /* 커버는 화면을 꽉 채우고, 사진은 그 안에 잘리지 않게(contain) 들어간다.
    사진을 위쪽에 붙여 아래쪽에 글자가 놓일 자리를 비워둔다. */
 .hero {
-  --hero-text-space: clamp(180px, 26vh, 250px);
+  --hero-text-space: clamp(200px, 28vh, 265px);
   position: relative;
   height: 100vh;
   height: 100svh;
@@ -164,7 +164,12 @@ body {
 .wedding-meta {
   margin: 10px 0 14px;
   font-size: 0.92rem;
-  text-wrap: balance;
+  line-height: 1.5;
+}
+
+/* 날짜 / 시각 / 장소를 각각 한 줄로 */
+.meta-line {
+  display: block;
 }
 
 .hero-actions,

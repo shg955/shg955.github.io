@@ -169,10 +169,29 @@
     return resolveDynamicText(getHeroMetaText());
   }
 
+  function renderHeroMeta() {
+    const el = $("#heroMeta");
+    if (!el) {
+      return;
+    }
+
+    // 한 문장으로 두면 폭에 따라 아무 데서나 끊기므로 줄을 직접 나눈다
+    const start = getTypeStartConfig();
+    const lines = [getDateText(), start.label, config.wedding.venueName];
+
+    el.innerHTML = "";
+    lines.filter(Boolean).forEach(function (line) {
+      const span = document.createElement("span");
+      span.className = "meta-line";
+      span.textContent = line;
+      el.appendChild(span);
+    });
+  }
+
   function renderHeader() {
     setText("#groomName", config.couple.groom);
     setText("#brideName", config.couple.bride);
-    setText("#heroMeta", getHeroMetaText());
+    renderHeroMeta();
     setText("#footerText", config.footer);
   }
 
