@@ -364,10 +364,14 @@
     }
 
     renderCalendar(targetDate);
-    updateCountdown(targetDate);
-    setInterval(function () {
+
+    // 일시 카드를 뺀 구성에서는 D-day 요소가 없으므로 타이머도 걸지 않는다
+    if ($("#countdown")) {
       updateCountdown(targetDate);
-    }, 60000);
+      setInterval(function () {
+        updateCountdown(targetDate);
+      }, 60000);
+    }
   }
 
   function updateCountdown(targetDate) {
