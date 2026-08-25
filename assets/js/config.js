@@ -54,7 +54,7 @@
     ],
     notes: [
       "본식은 별도로 진행하지 않고 피로연으로만 진행됩니다.",
-      "{{ENTRY_WINDOW}} 사이 편하신 시간에 자유롭게 오시면 됩니다."
+      //"{{ENTRY_WINDOW}} 사이 편하신 시간에 자유롭게 오시면 됩니다."
     ],
     // 카카오 지도를 못 쓸 때 대신 보여줄 약도 (종이 시안과 동일한 이미지)
     staticMapImage: "assets/images/map-sebit-minimal-bw.webp",
