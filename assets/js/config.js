@@ -58,8 +58,9 @@
     ],
     // 카카오 지도를 못 쓸 때 대신 보여줄 약도 (종이 시안과 동일한 이미지)
     staticMapImage: "assets/images/map-sebit-minimal-bw.webp",
-    // 지정해두면 주소 검색(Geocoder) 없이 바로 이 좌표에 지도를 그린다. 세빛섬 기준.
-    coords: { lat: 37.5117, lng: 126.9955 },
+    // 지정해두면 주소 검색(Geocoder) 없이 바로 이 좌표에 지도를 그린다.
+    // 카카오 로컬 API가 반환한 "채빛퀴진" POI 좌표 (세빛섬 중 채빛섬).
+    coords: { lat: 37.5125480, lng: 126.9958195 },
     mapLinks: {
       primary: "https://naver.me/xq3auZHs",
       secondary: "https://map.kakao.com/link/search/%EC%B1%84%EB%B9%9B%ED%80%B4%EC%A7%84"
