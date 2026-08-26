@@ -96,8 +96,8 @@
       side: "신부측",
       entries: [
         { role: "신부", holder: "한효경", bank: "하나은행", number: "244-910027-09305" },
-        { role: "아버지", holder: "한상훈", bank: "하나은행", number: "244-910027-09305" },
-        { role: "어머니", holder: "이수희", bank: "하나은행", number: "244-910027-09305" }
+        { role: "아버지", holder: "한상훈", bank: "씨티은행", number: "800-29827-261-01" },
+        { role: "어머니", holder: "이수희", bank: "NH농협", number: "100090-52-259361" }
       ]
     }
   ],
