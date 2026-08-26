@@ -138,7 +138,7 @@
     imageUrl: "assets/images/share-thumb.jpg",
     smsText: "모바일 청첩장을 전해드립니다. 참석하셔서 자리를 빛내 주세요.",
     kakaoTitle: "홍기 · 효경 결혼식에 초대합니다",
-    kakaoDescription: "2026년 10월 17일 토요일 오후 12시 30분 · 서울 세빛섬 채빛퀴진"
+    kakaoDescription: "2026년 10월 17일 토요일 · 서울 세빛섬 채빛퀴진"
   },
   footer: "홍기 · 효경 결혼식에 초대합니다."
 };
