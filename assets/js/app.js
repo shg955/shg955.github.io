@@ -398,24 +398,24 @@
     const month = targetDate.getMonth();
     const targetDay = targetDate.getDate();
 
-    // getDay()는 일요일이 0. 월요일 시작으로 쓰려면 한 칸씩 당긴다.
-    const firstDay = (new Date(year, month, 1).getDay() + 6) % 7;
+    // getDay()가 일요일=0이므로 그대로 쓰면 일요일 시작이 된다
+    const firstDay = new Date(year, month, 1).getDay();
     const lastDate = new Date(year, month + 1, 0).getDate();
 
-    const weekDays = ["월", "화", "수", "목", "금", "토", "일"];
+    const weekDays = ["일", "월", "화", "수", "목", "금", "토"];
     const calendarEl = $("#calendar");
 
     if (!calendarEl) {
       return;
     }
 
-    // 월요일 시작 기준 인덱스(0~6)에서 토/일을 가려낸다
-    function weekendClass(mondayIndex) {
-      if (mondayIndex === 5) {
-        return " is-sat";
-      }
-      if (mondayIndex === 6) {
+    // 일요일 시작 기준 인덱스(0~6)에서 일/토를 가려낸다
+    function weekendClass(dayIndex) {
+      if (dayIndex === 0) {
         return " is-sun";
+      }
+      if (dayIndex === 6) {
+        return " is-sat";
       }
       return "";
     }
